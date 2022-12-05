@@ -9,7 +9,7 @@ spec:
     - port: 80
       protocol: TCP
       targetPort: 80
-      nodePort: 30007
+        #      nodePort: 30007
   selector:
     app: wordpress
     tier: frontend

@@ -1,8 +1,8 @@
-secretGenerator:
-- name: mysql-pass
-  literals:
-  - password=root
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
 resources:
+  - secret.yaml
+  - mysql-configMap.yaml
   - pv-claim.yaml
   - pv-volume.yaml
   - mysql-deployment.yaml
